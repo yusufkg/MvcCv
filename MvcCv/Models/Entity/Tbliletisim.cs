@@ -16,10 +16,13 @@ namespace MvcCv.Models.Entity
     public partial class Tbliletisim
     {
         public int ID { get; set; }
-
+        [Required(ErrorMessage ="Bu alaný boþ geçemezsiniz")]
         public string Adsoyad { get; set; }
+        [Required(ErrorMessage = "Bu alaný boþ geçemezsiniz")]
         public string Mail { get; set; }
+        [Required(ErrorMessage = "Bu alaný boþ geçemezsiniz")]
         public string Konu { get; set; }
+        [Required(ErrorMessage = "Bu alaný boþ geçemezsiniz")]
         public string Mesaj { get; set; }
         public Nullable<System.DateTime> Tarih { get; set; }
     }

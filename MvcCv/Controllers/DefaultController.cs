@@ -67,6 +67,10 @@ namespace MvcCv.Controllers
         [HttpPost]
         public PartialViewResult iletisim(Tbliletisim t)
         {
+            if (!ModelState.IsValid)
+            {
+                return PartialView("iletisim");
+            }
             t.Tarih = DateTime.Parse(DateTime.Now.ToLongTimeString());
             db.Tbliletisim.Add(t);
             db.SaveChanges();
