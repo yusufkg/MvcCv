@@ -11,7 +11,7 @@ namespace MvcCv.Controllers
     public class HakkimdaController : Controller
     {
         // GET: Hakkimda
-        DbCvEntities1 db = new DbCvEntities1();
+        DbCvEntities db = new DbCvEntities();
         
         GenericRepository<TblHakkimda> repo = new GenericRepository<TblHakkimda>();
         

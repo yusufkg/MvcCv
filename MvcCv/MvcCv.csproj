@@ -161,7 +161,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\Entity\requiredAttribute.cs" />
     <Compile Include="Models\Entity\TblAdmin.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -177,9 +176,6 @@
     <Compile Include="Models\Entity\TblHobilerim.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Entity\Tbliletisim.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\Entity\TblSertifikalarim.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -187,6 +183,9 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entity\TblYeteneklerim.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entity\Tblİletisim.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -2063,7 +2062,6 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\Entity\Model1.edmx.sql" />
     <Content Include="Models\Entity\Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
@@ -2071,13 +2069,6 @@
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\Entity\Model1.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\Entity\Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Content>
     <Content Include="AdminLTE-3.0.4\.babelrc" />
     <Content Include="AdminLTE-3.0.4\.browserslistrc" />
     <Content Include="AdminLTE-3.0.4\.editorconfig" />
@@ -2432,6 +2423,13 @@
     <Content Include="login-form-20\scss\bootstrap\_utilities.scss" />
     <Content Include="login-form-20\scss\bootstrap\_variables.scss" />
     <Content Include="login-form-20\scss\style.scss" />
+    <EntityDeploy Include="Models\Entity\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Entity\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -2485,7 +2483,6 @@
     <Content Include="Views\Sertifika\SertifikaGetir.cshtml" />
     <Content Include="Views\Sertifika\YeniSertifika.cshtml" />
     <Content Include="Views\iletisim\Index.cshtml" />
-    <Content Include="Views\Hobi\Index.cshtml" />
     <Content Include="Views\Default\SosyalMedya.cshtml" />
     <Content Include="Views\SosyalMedya\Index.cshtml" />
     <Content Include="Views\SosyalMedya\SayfaGetir.cshtml" />
@@ -2495,6 +2492,7 @@
     <Content Include="Views\Admin\AdminDuzenle.cshtml" />
     <Content Include="Views\Yetenek\YetenekDuzenle.cshtml" />
     <Content Include="Views\Default\havadurumu.cshtml" />
+    <Content Include="Views\Hobi\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

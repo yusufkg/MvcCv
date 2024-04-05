@@ -20,8 +20,8 @@ namespace MvcCv.Controllers
         [HttpPost]
         public ActionResult Index(TblAdmin p)
         {
-            DbCvEntities1 db = new DbCvEntities1();
-            var bilgi = db.TblAdmin.FirstOrDefault(x => x.KullaniciAdi == 
+            DbCvEntities db = new DbCvEntities();
+            var bilgi = db.TblAdmins.FirstOrDefault(x => x.KullaniciAdi == 
             p.KullaniciAdi && x.Sifre == p.Sifre);
 
             if (bilgi != null)

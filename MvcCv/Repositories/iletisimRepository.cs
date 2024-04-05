@@ -6,7 +6,7 @@ using System.Web;
 
 namespace MvcCv.Repositories
 {
-    public class iletisimRepository:GenericRepository<Tbliletisim>
+    public class iletisimRepository:GenericRepository<Tblİletisim>
     {
     }
 }

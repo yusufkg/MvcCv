@@ -12,48 +12,48 @@ namespace MvcCv.Controllers
     public class DefaultController : Controller
     {
         // GET: Default
-        DbCvEntities1 db = new DbCvEntities1();
-
+        DbCvEntities db = new DbCvEntities();
+        
         public ActionResult Index()
         {
-            var degerler = db.TblHakkimda.ToList();
+            var degerler = db.TblHakkimdas.ToList();
             return View(degerler);
         }
         public PartialViewResult Deneyim()
         {
-            var deneyimler = db.TblDeneyimlerim.ToList();
+            var deneyimler = db.TblDeneyimlerims.ToList();
 
             return PartialView(deneyimler);
         }
 
         public PartialViewResult SosyalMedya()
             {
-                var sosyalmedya = db.TblSosyalMedya.Where(x=>x.Durum==true).ToList();
+                var sosyalmedya = db.TblSosyalMedyas.Where(x=>x.Durum==true).ToList();
 
                 return PartialView(sosyalmedya);
             }
 
         public PartialViewResult Egitimlerim()
         {
-            var egitimler = db.TblEgitimlerim.ToList();
+            var egitimler = db.TblEgitimlerims.ToList();
 
             return PartialView(egitimler);
         }
         public PartialViewResult Yeteneklerim()
         {
-            var yetenekler = db.TblYeteneklerim.ToList();
+            var yetenekler = db.TblYeteneklerims.ToList();
 
             return PartialView(yetenekler);
         }
         public PartialViewResult Hobilerim()
         {
-            var hobiler = db.TblHobilerim.ToList();
+            var hobiler = db.TblHobilerims.ToList();
 
             return PartialView(hobiler);
         }
         public PartialViewResult Sertifikalar()
         {
-            var sertifikalar = db.TblSertifikalarim.ToList();
+            var sertifikalar = db.TblSertifikalarims.ToList();
 
             return PartialView(sertifikalar);
         }
@@ -65,14 +65,14 @@ namespace MvcCv.Controllers
           }
 
         [HttpPost]
-        public PartialViewResult iletisim(Tbliletisim t)
+        public PartialViewResult iletisim(Tblİletisim t)
         {
             if (!ModelState.IsValid)
             {
                 return PartialView("iletisim");
             }
             t.Tarih = DateTime.Parse(DateTime.Now.ToLongTimeString());
-            db.Tbliletisim.Add(t);
+            db.Tblİletisim.Add(t);
             db.SaveChanges();
             return PartialView();
         }

@@ -13,10 +13,10 @@ namespace MvcCv.Models.Entity
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DbCvEntities1 : DbContext
+    public partial class DbCvEntities : DbContext
     {
-        public DbCvEntities1()
-            : base("name=DbCvEntities1")
+        public DbCvEntities()
+            : base("name=DbCvEntities")
         {
         }
     
@@ -25,14 +25,14 @@ namespace MvcCv.Models.Entity
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<TblAdmin> TblAdmin { get; set; }
-        public virtual DbSet<TblDeneyimlerim> TblDeneyimlerim { get; set; }
-        public virtual DbSet<TblEgitimlerim> TblEgitimlerim { get; set; }
-        public virtual DbSet<TblHakkimda> TblHakkimda { get; set; }
-        public virtual DbSet<TblHobilerim> TblHobilerim { get; set; }
-        public virtual DbSet<Tbliletisim> Tbliletisim { get; set; }
-        public virtual DbSet<TblSertifikalarim> TblSertifikalarim { get; set; }
-        public virtual DbSet<TblYeteneklerim> TblYeteneklerim { get; set; }
-        public virtual DbSet<TblSosyalMedya> TblSosyalMedya { get; set; }
+        public virtual DbSet<TblHakkimda> TblHakkimdas { get; set; }
+        public virtual DbSet<TblAdmin> TblAdmins { get; set; }
+        public virtual DbSet<TblDeneyimlerim> TblDeneyimlerims { get; set; }
+        public virtual DbSet<TblEgitimlerim> TblEgitimlerims { get; set; }
+        public virtual DbSet<TblHobilerim> TblHobilerims { get; set; }
+        public virtual DbSet<Tblİletisim> Tblİletisim { get; set; }
+        public virtual DbSet<TblYeteneklerim> TblYeteneklerims { get; set; }
+        public virtual DbSet<TblSosyalMedya> TblSosyalMedyas { get; set; }
+        public virtual DbSet<TblSertifikalarim> TblSertifikalarims { get; set; }
     }
 }

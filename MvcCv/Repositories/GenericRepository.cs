@@ -11,7 +11,7 @@ namespace MvcCv.Repositories
     public class GenericRepository<T> where T: class, new()
     {
 
-        DbCvEntities1 db = new DbCvEntities1();
+        DbCvEntities db = new DbCvEntities();
 
         public List<T> List()
         {

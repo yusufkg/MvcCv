@@ -11,7 +11,7 @@ namespace MvcCv.Controllers
     public class iletisimController : Controller
     {
         // GET: iletisim
-        GenericRepository<Tbliletisim> repo = new GenericRepository<Tbliletisim>();
+        GenericRepository<Tblİletisim> repo = new GenericRepository<Tblİletisim>();
         public ActionResult Index()
         {
             var mesajlar = repo.List();
