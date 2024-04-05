@@ -44,7 +44,7 @@
           <Property Name="Adres" Type="varchar" MaxLength="100" />
           <Property Name="Telefon" Type="varchar" MaxLength="20" />
           <Property Name="Mail" Type="varchar" MaxLength="50" />
-          <Property Name="Aciklama" Type="varchar" MaxLength="30" />
+          <Property Name="Aciklama" Type="varchar" MaxLength="500" />
           <Property Name="Resim" Type="varchar" MaxLength="100" />
         </EntityType>
         <EntityType Name="TblHobilerim">
@@ -117,7 +117,7 @@
           <Property Name="Adres" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
           <Property Name="Telefon" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Aciklama" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Aciklama" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
           <Property Name="Resim" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityContainer Name="DbCvEntities" annotation:LazyLoadingEnabled="true">
